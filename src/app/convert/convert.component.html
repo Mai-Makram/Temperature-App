@@ -1,0 +1,41 @@
+
+ <!--<article>
+     <div>
+         <h3>from F to C</h3>
+         <input type="number" [(ngModel)]="fehrenhit">
+         <div>
+             <p>Celises{{fehrenhit | temprature:'c'}}</p>
+         </div>
+     </div>
+     <div>
+        <h3>from C to F</h3>
+        <input type="number" [(ngModel)]="Celises">
+        <div>
+            <p>fehrenhit{{Celises | temprature:'f'}}</p>
+        </div>
+     </div>
+ </article>-->
+ 
+ <body>
+     
+
+    
+    <h1 class="text-center">Temprature</h1>
+ <div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+            <input type="number" [(ngModel)]="fehrenhit" value="{{Celises | temprature:'f'}}">
+            <p  class="text-center">Fahrenheit</p>
+        </div>
+        <div class="col-md-auto">
+            <h3>=</h3>
+        </div>
+
+        <div class="col col-lg-2">
+            <input type="number" [(ngModel)]="Celises" value="{{fehrenhit | temprature:'c'}}">
+            <p  class="text-center">Celsius</p>
+        </div>
+    </div>
+</div>
+<!--<img src="assets/images/1.jpg" class="img-fluid" alt="...">-->
+</body>
